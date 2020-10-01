@@ -17,8 +17,8 @@ game_a = Game.create(title: 'Dota2', genre: 'MOBA', skill_level: '3')
 game_b = Game.create(title: 'Valorant', genre: 'FPS', skill_level: '3')
 game_c = Game.create(title: 'Call of Duty: Warzone', genre: 'BR', skill_level: '4')
 
-username_a = Username.create(player: player_a, game: game_a)
-username_b = Username.create(player: player_b, game: game_b)
-username_c = Username.create(player: player_c, game: game_c)
+Username.create(player: player_a, game: game_a)
+Username.create(player: player_b, game: game_b)
+Username.create(player: player_c, game: game_c)
 
 
