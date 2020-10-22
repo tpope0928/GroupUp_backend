@@ -19,6 +19,6 @@ class Api::V1::GamesController < ApplicationController
   private
 
   def game_params
-    params.require(:game).permit(:title, :genre, :skill_level, :player_ids)
+    params.require(:game).permit(:title, :genre, :skill_level, :player_ids => [])
   end
 end
