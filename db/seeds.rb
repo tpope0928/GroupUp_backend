@@ -12,13 +12,15 @@ Username.destroy_all
 game_a = Game.create(title: 'Dota2', genre: 'MOBA', skill_level: '3', game_name: 'Flanders')
 game_b = Game.create(title: 'Valorant', genre: 'FPS', skill_level: '3', game_name: 'TrumbleInDaJungle')
 game_c = Game.create(title: 'Call of Duty: Warzone', genre: 'BR', skill_level: '4', game_name: 'KingTusk')
+game_d = Game.create(title: 'Fall Guys', genre: 'Casual', skill_level: '2', game_name: 'TrumbleTime')
 
 player_a = Player.create(name: 'drewP', city: 'Gaithersburg', state: 'Maryland')
 player_b = Player.create(name: 'alecT', city: 'Houston', state: 'Texas')
 player_c = Player.create(name: 'robbyM', city: 'Nashville', state: 'Tennessee')
 
 Username.create(player: player_a, game: game_a)
-Username.create(player: player_b, game: game_b)
+Username.create(player: player_b, game: game_d)
 Username.create(player: player_c, game: game_c)
+Username.create(player: player_b, game: game_b)
 
 
