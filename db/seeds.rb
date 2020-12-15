@@ -23,6 +23,6 @@ Username.create(player: player_a, game: game_a)
 Username.create(player: player_b, game: game_d)
 Username.create(player: player_c, game: game_c)
 Username.create(player: player_b, game: game_b)
-Username.create(player: player_c, game: game_e)
+Username.create(game: game_e, player: player_c)
 
 
